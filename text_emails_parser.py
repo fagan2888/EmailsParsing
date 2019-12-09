@@ -34,30 +34,30 @@ class TextEmailParser():
 
     parsing sur Durée de la souscription
 
-    Numéro de commande (PO)    : C1920106
-    Distributeur               : Tech Data France, SAS
+    Numéro de commande (PO)    : C11231231
+    Distributeur               : Tech Untelo001, SAS
 
 
-    Client final                :Interforum
-    Numéro de compte du client final:525622
-    Numéro de commande du client final:C1920106
+    Client final                :IABCD
+    Numéro de compte du client final:505464
+    Numéro de commande du client final:Trtsdsdg
 
     Détail de la commande:
 
     ********
     Ligne 10
-    Description  : Red Hat Enterprise Linux for Virtual Datacenters with Smart Management, Standard
-    Produit      : RH00007
-    Numéro de contrat: 11976463
+    Description  : RCie
+    Produit      : D000001
+    Numéro de contrat: 10000002
     Durée de la souscription: du 01-AUG-2019 au 31-DEC-2021
-    Quantité     : 1
+    Quantité     : 2
     ********
     Ligne 20
-    Description  : Red Hat Enterprise Linux Server with Smart Management, Standard (Physical or Virtual Nodes)
-    Produit      : RH00009
-    Numéro de contrat: 11976463
+    Description  : Scie
+    Produit      : H000009
+    Numéro de contrat: 200000003
     Durée de la souscription: du 01-AUG-2019 au 31-DEC-2021
-    Quantité     : 6
+    Quantité     : 5
     ********
 
     ALGO:
@@ -328,6 +328,7 @@ class TextEmailParser():
             print('Error in loop_operations_over_emails %s'%e.__str__())
             raise
 
-# main section
-emailparser = TextEmailParser()
-emailparser.loop_operations_over_emails()
+if __name__ == "__main__":
+    # main section
+    emailparser = TextEmailParser()
+    emailparser.loop_operations_over_emails()
